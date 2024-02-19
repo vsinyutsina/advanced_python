@@ -16,7 +16,7 @@ def split_data(df: pd.DataFrame, test=True):
 
     return X
 
-def open_data(path="data/client_base.csv"):
+def open_data(path="HW1/data/client_base.csv"):
 
     cols = ['TARGET', 'AGE', 'SOCSTATUS_WORK_FL',
             'SOCSTATUS_PENS_FL', 'GENDER', 'CHILD_TOTAL',
@@ -44,7 +44,7 @@ def preprocess_data(df: pd.DataFrame, test=True):
         return X_df
 
 
-def fit_and_save_model(X_df, y_df, path="models/log_reg.pkl"):
+def fit_and_save_model(X_df, y_df, path="HW1/models/log_reg.pkl"):
     model = LogisticRegression()
     model.fit(X_df, y_df)
 
@@ -58,7 +58,7 @@ def fit_and_save_model(X_df, y_df, path="models/log_reg.pkl"):
     print(f"Model was saved to {path}")
 
 
-def load_model_and_predict(df, path="models/log_reg.pkl"):
+def load_model_and_predict(df, path="HW1/models/log_reg.pkl"):
     with open(path, "rb") as file:
         model = load(file)
 

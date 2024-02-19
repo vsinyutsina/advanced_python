@@ -12,7 +12,7 @@ def process_main_page():
 
 
 def show_main_page():
-    image = Image.open('data/piggy_bank.jpg')
+    image = Image.open('HW1/data/piggy_bank.jpg')
 
     st.set_page_config(
         layout="wide",

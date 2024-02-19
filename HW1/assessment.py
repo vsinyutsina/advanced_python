@@ -3,7 +3,7 @@ from pickle import load
 import pandas as pd
 import seaborn as sns
 
-def process_assesment(path="models/log_reg.pkl"):
+def process_assesment(path="HW1/models/log_reg.pkl"):
 
     cols = ['AGE', 'SOCSTATUS_WORK_FL',
             'SOCSTATUS_PENS_FL', 'GENDER', 'CHILD_TOTAL',
