@@ -1,2 +1,2 @@
-# advanced_python
-Streamlit HW
+# Homework
+Пулл домашних заданий по предмету - Продвинутый питон 2024
