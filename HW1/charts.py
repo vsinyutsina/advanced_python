@@ -11,7 +11,7 @@ def write_charts():
     height = st.slider("plot height", 1, 25, 5)
     figsize = (width, height)
 
-    df_min_data = pd.read_csv('data/client_base.csv')
+    df_min_data = pd.read_csv('HW1/data/client_base.csv')
     plt.figure(figsize=figsize)
 
     # charts
